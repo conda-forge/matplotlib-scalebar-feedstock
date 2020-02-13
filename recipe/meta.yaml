@@ -10,17 +10,17 @@ source:
   sha256: 85cec2bacf85aaf00a70cafa5786f7e66e7c0f6e9dc5c894fd6d1afaa7264ecd
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
-    - matplotlib
+    - matplotlib-base
     - pip
     - python
   run:
-    - matplotlib
+    - matplotlib-base
     - python
 
 test:
