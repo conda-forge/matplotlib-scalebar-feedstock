@@ -5,11 +5,13 @@ Home: https://github.com/ppinard/matplotlib-scalebar
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/matplotlib-scalebar-feedstock/blob/master/LICENSE.txt)
 
 Summary: Artist for matplotlib to display a scale bar
 
+Development: https://github.com/ppinard/matplotlib-scalebar
 
+Documentation: https://github.com/ppinard/matplotlib-scalebar
 
 Current build status
 ====================
