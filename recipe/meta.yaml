@@ -18,10 +18,10 @@ requirements:
   host:
     - matplotlib-base
     - pip
-    - python
+    - python >=3.7
   run:
     - matplotlib-base
-    - python
+    - python >=3.7
 
 test:
   imports:
