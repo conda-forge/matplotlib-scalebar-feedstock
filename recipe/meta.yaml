@@ -1,5 +1,5 @@
 {% set name = "matplotlib-scalebar" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3cf78834e45bb72b8776bcedb6f5c2f643c510a2a95f6edc0bf5054dcc528df8
+  sha256: 14887af1093579c5e6afae51a0a1ecc3f715cdbc5c4d7ef59cdeec76ee6bb15d
 
 build:
   number: 0
