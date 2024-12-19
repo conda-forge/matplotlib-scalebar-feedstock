@@ -19,6 +19,8 @@ requirements:
     - matplotlib-base
     - pip
     - python {{ python_min }}
+    # 0.8.1 uses setuptools but it is changed to hatchling in the development branch
+    - setuptools
   run:
     - matplotlib-base
     - python >={{ python_min }}
