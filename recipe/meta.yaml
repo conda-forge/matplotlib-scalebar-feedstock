@@ -1,26 +1,26 @@
 {% set name = "matplotlib-scalebar" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 14887af1093579c5e6afae51a0a1ecc3f715cdbc5c4d7ef59cdeec76ee6bb15d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: f91adc5e4e67ac920a8fa98a55f904d56e5c2da4d56286748c31ec62146362be
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - matplotlib-base
+    - hatchling
+    - hatch-vcs
     - pip
     - python {{ python_min }}
-    # 0.8.1 uses setuptools but it is changed to hatchling in the development branch
-    - setuptools
   run:
     - matplotlib-base
     - python >={{ python_min }}
